@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script language = "JavaScript" type="text/JavaScript">
+<!--
+function nota()
+{
+    var catat = document.formnota;
+    var harga = parseInt(catat.satu.value) * parseInt(catat.harganya.value);
+    
+    var hargasemua = harga ;
+    if (hargasemua > 500000)
+    {
+        catat.TotalBayar.value = hargasemua;
+        catat.Diskon.value = 50000;
+        catat.JumlahBayar.value = hargasemua - parseInt(catat.Diskon.value);
+     } 
+     else 
+     {
+        catat.TotalBayar.value = hargasemua;
+        catat.Diskon.value = 0;
+        catat.JumlahBayar.value = hargasemua;
+    }    
+}
+function awal(){
+document.formnota.reset();
+}
+//-->
+</script>
+</head>
+
+<body>
+<p><img src="../../pictures/merchan/MaikaSakuranomiyaFullGraphicTShirtAnimeBlendS_1.jpg.jpg" width="400" height="399" alt=""/><img src="../../pictures/merchan/MaikaSakuranomiyaFullGraphicTShirtAnimeBlendS_2.jpg.jpg" width="400" height="399" alt=""/></p>
+<table width="100%" border="1">
+  <tbody>
+    <tr>
+      <td style="text-align: left">Kaos Maika - Blend S Full Print</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><p>        Graphic Printing</p>
+        <p>Bahan :<br>
+          - Microfiber<br>
+          - Axtatex</p>
+        <p>Available Size :<br>
+          - S (59 x 43 cm)<br>
+          - M (64 x 46 cm)<br>
+          - L (70 x 50 cm)<br>
+          - XL (72 x 52 cm)</p>
+        <p>*Cantumkan ukuran dan  bahan pada kolom catatan.</p>
+        <p>Note :<br>
+          Silahkan baca catatan  toko kami mengenai prosedur produksi dan pengiriman.<br>
+          Jika ada yang kurang  jelas bisa konsultasi terlebihdahulu dengan mengirimkan pesan langsung kepada  kami.</p></td>
+    </tr>
+  </tbody>
+</table>
+<p><div align="center">
+        <form name="formnota" action="#">
+  <table border="1" align="center" style="width:589">
+<tr>   
+<th width="178" style="width:27" scope="col"><strong>Harga Satuan</strong></th>
+<th width="395" style="text-align: center" scope="col"><strong>
+  <input type="text" name="satu" value="160000" size="20" disabled="disabled"/>
+</strong></th>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Jumlah yang akan dibeli</strong></td>
+<td style="text-align: center"><input name="harganya" type="text" onkeyup="nota()" value="0" size="20"/></td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>Jumlah Total</strong></td>
+  <td style="text-align: center"><input name="TotalBayar" type="text" style="text-align:center" disabled="disabled" value="-" size="20"/></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Diskon )*</strong></td>
+<td style="text-align: center"><input name="Diskon" type="text" style="text-align:center" disabled="disabled" value="-" size="20"/></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Jumlah Bayar</strong></td>
+<td style="text-align: center"><input name="JumlahBayar" type="text" style="text-align:center" disabled="disabled" value="-" size="20"/></td>
+</tr>
+</table>
+<p align="center"><span class="style7">)* </span><span class="style9">: Setiap pembelian lebih dari Rp. 500.000. Akan mendapatkan diskon Rp.50.000. Tidak berlaku kelipatan</span> <br/>
+</p>
+<div id="Layer1" style="position: absolute; width: 166px; height: 40px; z-index: 1; left: 528px; top: 1014px;">
+<input type="button" value="B a t a l" onclick="awal()"/>
+</div>
+</form></div></p>
+</body>
+</html>

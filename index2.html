@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anime Network</title>
+  <link href="images/ai_chan.ico" rel="s icon">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <script src="../bootstrap/js/jquery.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.6.js" ></script>
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>  
+  <script type="text/javascript" src="js/Bebas_400.font.js"></script>
+  <script type="text/javascript" src="js/bg.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/superfish.js"></script>  
+  <script type="text/javascript" src="js/content_switch.js"></script>
+  <script type="text/javascript" src="js/superfish.js"></script>  
+  <script type="text/javascript" src="js/forms.js"></script>  
+  <script type="text/javascript" src="js/cScroll.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>  
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  
+ 
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/html5.js"></script>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+  <![endif]-->
+	<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+		</div>
+	<![endif]-->
+</head>
+
+<body>
+
+<div class="spinner"></div>
+<div id="bg"><img src="images/bg.jpg" alt=""></div>
+<div class="extra">
+		<div class="wrapper">
+			<!--header -->
+			<header>
+				<h1><a href="index.html" id="logo">in safe security services</a></h1>
+				<nav class="menu">
+					<ul id="menu">
+						<li><a href="#" onclick="loadDoc('data/berita.html', myFunction)"><span></span><strong>berita</strong></a></li>
+						<li><a href="#" onclick="loadDoc('data/merchan3.html', myFunction)"><span></span><strong>Merchandise 2</strong></a>
+						</li>
+						<li><a href="#" onclick="loadDoc('data/awal.html', myFunction)"><span></span><strong>awal</strong></a></li>
+						<li><a href="#" onclick="loadDoc('data/merchan.html', myFunction)"><span></span><strong>Merchandise</strong></a></li>
+						<li><a href="#" onclick="loadDoc('data/about.html', myFunction)"><span></span><strong>About</strong></a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<script>
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+  document.getElementById("demo").innerHTML =
+  xhttp.responseText;
+}
+			</script>
+			<!--header end-->
+		<div class="main">
+			<!--content -->
+			<article id="content">
+				<ul>
+					<li class="well" id="demo">
+    				</li>
+				</ul>
+			</article>
+			<!--content end-->
+		</div>
+	</div>
+	<div class="block"></div>
+</div>
+<div class="bg1">
+		<div class="main">
+			<!--footer -->
+			<footer>
+				<span class="right">Insafe (c) 2011 | <a href="#!/page_privacy">Privacy policy</a></span>
+				<ul id="icons">
+					<li><a href="#"><img src="images/icon1.gif" alt=""><img src="images/icon1_active.jpg" alt="" class="act">Our Email</a></li>
+					<li><a href="#"><img src="images/icon2.gif" alt=""><img src="images/icon2_active.jpg" alt="" class="act">linkedin</a></li>
+					<li><a href="#"><img src="images/icon3.gif" alt=""><img src="images/icon3_active.jpg" alt="" class="act">delicious</a></li>
+					<li><a href="#"><img src="images/icon4.gif" alt=""><img src="images/icon4_active.jpg" alt="" class="act">flickr</a></li>
+				</ul>
+				More  at <a rel="nofollow" href="http://www.templatemonster.com/category.php?category=0&type=1" target="_blank">TemplateMonster.com</a>
+			</footer>
+			<!--footer end-->
+		</div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+<script>
+$(window).load(function() {	
+	$('.spinner').fadeOut();
+	$('body').css({overflow:'inherit'})
+})
+</script>
+<!--coded by koma-->
+</body>
+</html>

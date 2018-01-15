@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas UAS</title>
+<link href="images/ai_chan.ico" rel="s icon">
+<link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body class="warna">
+
+<div class="container">
+
+<header>
+ <div style="position: absolute; left: 147px; top: 134px; width: 707px; height: 28px; z-index: 2;"></div>
+  <script>
+  var d = new Date();
+  var h = d.getHours();
+  if (h < 11) { document.write('Selamat Pagi ! - '); }
+  else { if (h < 15) { document.write('Selamat Siang ! - '); }
+  else { if (h < 19) { document.write('Selamat Sore ! - '); }
+  else { if (h <= 23) { document.write('Selamat Malam ! - '); }
+  }}}
+        </script>
+      <script>
+		var dtNow = new Date();
+		var dtMonth = dtNow.getMonth();
+		var dtYear = dtNow.getFullYear();		
+
+		if (dtMonth==0) {
+		   var dtMonthNow = "Januari" }
+		if (dtMonth==1) {
+		   var dtMonthNow = "Februari" }
+		if (dtMonth==2) {
+		   var dtMonthNow = "Maret" }
+		if (dtMonth==3) {
+		   var dtMonthNow = "April" }
+		if (dtMonth==4) {
+		   var dtMonthNow = "Mei" }
+		if (dtMonth==5) {
+		   var dtMonthNow = "Juni" }
+		if (dtMonth==6) {
+		   var dtMonthNow = "Juli" }
+		if (dtMonth==7) {
+		   var dtMonthNow = "Agustus" }
+		if (dtMonth==8) {
+		   var dtMonthNow = "September" }
+		if (dtMonth==9) {
+		   var dtMonthNow = "Oktober" }
+		if (dtMonth==10) {
+		   var dtMonthNow = "November" }
+		if (dtMonth==11) {
+		   var dtMonthNow = "Desember" }
+		if (dtNow.getDay()==0) {
+		   var dtDay = "Minggu" }
+		if (dtNow.getDay()==1) {
+		   var dtDay = "Senin" }
+		if (dtNow.getDay()==2) {
+		   var dtDay = "Selasa" }
+		if (dtNow.getDay()==3) {
+		   var dtDay = "Rabu" }
+		if (dtNow.getDay()==4) {
+		   var dtDay = "Kamis" }
+		if (dtNow.getDay()==5) {
+		   var dtDay = "Jumat" }
+		if (dtNow.getDay()==6) {
+		   var dtDay = "Sabtu" }
+		var dtDate = dtNow.getDate();
+		document.write(dtDay + ", " + dtDate + " " + dtMonthNow + " " + dtYear + " ");
+        </script>
+	<table width="484" border="0">
+          <tr>
+            <td height="29"><div id="wb_CssMenu1" style="position: absolute; left: 209px; top: 90px; width: 707px; height: 28px; z-index: 2;">
+                <ul>
+                  <li><a href="data/awal.html" target="showframe">Home</a> </li>
+                  <li><a href="data/merchan3.html" target="showframe">Merchandise</a> </li>
+				  <li><a href="data/berita.html" target="showframe">Berita</a></li>
+				  <li><a href="data/review.html" target="showframe">Review</a></li>
+	              <li><a href="data/about.html" target="showframe">About</a> </li>
+                </ul>
+              <br>
+            </div></td>
+          </tr>
+</table>
+	<span style="position: absolute; left: -5px; top: -13px; width: 225px; height: 28px; z-index: 2;"><a href="data/awal.html" target="showframe"><img src="images/logo.png" width="206" height="142" alt=""/></a></span>
+ <audio autoplay>
+   <source src="music/test.mp3" type="audio/mpeg">
+   Your browser does not support the audio element.
+</audio>
+</header>
+
+
+<table border="0" width="100%" background="images/marmer.png">
+	<td width="100%">
+		<iframe src="data/awal.html" name="showframe" height="460" width="100%"></iframe>
+	</td>
+	</table>
+<footer class="warna2">&copy Helmi MuZa</footer>
+
+</div>
+
+</body>
+</html>

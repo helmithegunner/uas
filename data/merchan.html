@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="../css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/layout.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+  <script src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-1.6.js" ></script>
+  <script type="text/javascript" src="../js/cufon-yui.js"></script>
+  <script type="text/javascript" src="../js/cufon-replace.js"></script>  
+  <script type="text/javascript" src="../js/Bebas_400.font.js"></script>
+  <script type="text/javascript" src="../js/bg.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/superfish.js"></script>  
+  <script type="text/javascript" src="../js/content_switch.js"></script>
+  <script type="text/javascript" src="../js/superfish.js"></script>  
+  <script type="text/javascript" src="../js/forms.js"></script>  
+  <script type="text/javascript" src="../js/cScroll.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui-1.8.11.custom.min.js"></script>  
+  <script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+</head>
+
+<body>
+<img src="images/bg_content.png" alt="" class="bg_cont">
+<div class="box">
+<div>
+							<h2>Merchandise							</h2>
+							<div class="cols">
+								<div class="pad_bot2">
+										<figure><span class="act"></span><a href="#" onclick="loadDoc('merchan/kaos_megumin.html', myFunction)"><img src="../pictures/merchan/MeguminKonoSubaAnimeTshirtKaosBaju_1.jpg.jpg" width="300" height="301" alt=""/></a></figure>
+							  </div>
+									<div class="pad_bot2">
+										<p><strong style="text-align: center" class="color1">Kaos Megumin - KonoSuba</strong><br>
+										Rp.160.000</p>
+									</div>
+									<div class="pad_bot2">
+									  <figure><span class="act"></span><a href="#!/page_more"><img src="../pictures/merchan/KizunaAiTshirtKaosDistro_1.jpg.jpg" width="300" height="298" alt=""/></a></figure>
+							  </div>
+									<p><strong class="color1">Kaos Kizuna Ai</strong><br>
+											Rp.100.000</p>
+	</div>
+								<div class="cols pad_left2">
+									<div class="pad_bot2">
+										<figure><span class="act"></span><a href="#!/page_more"><img src="../pictures/merchan/MaikaSakuranomiyaFullGraphicTShirtAnimeBlendS_1.jpg.jpg" width="300" height="301" alt=""/></a></figure>
+									</div>
+									<div class="pad_bot2">
+									  <p><strong class="color1">Kaos Maika - Blend S</strong><br>
+									  Rp.160.000</p>
+									</div>
+									<div class="pad_bot2">
+									  <figure><span class="act"></span><a href="#!/page_more"><img src="../pictures/merchan/sleepmaskkonosubarashiMegumin_1.jpg.jpg" width="308" height="233" alt=""/></a></figure>
+								  </div>
+								  
+									<p><strong class="color1">Sleep Mask Megumin - KonoSuba</strong><br>
+											Rp.35.000</p>
+								</div>
+	<div class="cols pad_left2">
+									<div class="pad_bot2">
+										<figure><span class="act"></span><a href="#!/page_more"><img src="../pictures/merchan/BlendSMafuyuHoshikawaKaosFullPrintAnimePrintPoi_1.jpg.jpg" width="300" height="254" alt=""/></a></figure>
+									</div>
+									<div class="pad_bot2">
+									  <p><strong class="color1">Kaos Mafuyu - Blend S</strong><br>Rp.160.000</p></div>
+									<div class="pad_bot2">
+										<figure><span class="act"></span><a href="#!/page_more"><img src="../pictures/merchan/NEWfigma008LuckyStarKonataIzumiWinterUniformverFigureFS_1.jpg.jpg" width="181" height="300" alt=""/></a></figure>
+									</div>
+									<p><strong class="color1">Figure Konata Izumi - Lucky Star</strong><br>
+											Rp.820.000</p>
+								</div>
+  </div>
+	</div>
+	<script>
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+  document.getElementById("demo").innerHTML =
+  xhttp.responseText;
+}
+			</script>
+</body>
+</html>
